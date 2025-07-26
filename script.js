@@ -1,7 +1,8 @@
-// Alerta de clique em botão (exemplo simples)
-document.querySelectorAll(".button").forEach(botao => {
+// Alerta temporário
+const botoes = document.querySelectorAll(".button");
+botoes.forEach(botao => {
   botao.addEventListener("click", function(event) {
-    // Comente essa linha depois que colocar links reais:
-    alert(`Você clicou em: ${botao.textContent}`);
+    event.preventDefault();
+    alert("Essa funcionalidade será adicionada em breve!");
   });
 });
