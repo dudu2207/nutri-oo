@@ -1,7 +1,7 @@
-function showSection(id) {
-  const sections = document.querySelectorAll('.content');
-  sections.forEach(sec => sec.style.display = 'none');
-  
-  const target = document.getElementById(id);
-  if (target) target.style.display = 'block';
-}
+// Alerta de clique em botão (exemplo simples)
+document.querySelectorAll(".button").forEach(botao => {
+  botao.addEventListener("click", function(event) {
+    // Comente essa linha depois que colocar links reais:
+    alert(`Você clicou em: ${botao.textContent}`);
+  });
+});
